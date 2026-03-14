@@ -1,0 +1,82 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/* ============================================================
+   Tag badge styles
+   ============================================================ */
+
+.post-tags {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #424242;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.tag-badge--large {
+  font-size: 0.9rem;
+  padding: 0.3em 0.8em;
+}
+
+/* ============================================================
+   Tags listing page
+   ============================================================ */
+
+.tags-page .tag-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.tag-count {
+  color: #828282;
+  font-size: 0.85rem;
+}
+
+/* ============================================================
+   Tag article listing page
+   ============================================================ */
+
+.tag-page .post-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.tag-page .post-list > li {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.tag-page .post-list > li:last-child {
+  border-bottom: none;
+}
