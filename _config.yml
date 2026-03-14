@@ -5,7 +5,7 @@ baseurl: "/MAGI-News"
 url: "https://MasayukiTanaka0412.github.io"
 
 # Google Analytics（実際のGA4測定IDに置き換えてください）
-google_analytics: G-XXXXXXXXXX
+google_analytics: G-5HG7WGMYZC
 
 # ビルド設定
 markdown: kramdown
