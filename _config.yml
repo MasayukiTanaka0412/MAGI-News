@@ -7,6 +7,7 @@ url: "https://MasayukiTanaka0412.github.io"
 # ビルド設定
 markdown: kramdown
 theme: minima
+future: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
