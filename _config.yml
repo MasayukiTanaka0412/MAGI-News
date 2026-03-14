@@ -1,0 +1,34 @@
+# サイトの基本設定
+title: MAGI-News
+description: ニュースアーカイブサイト
+baseurl: ""
+url: "https://MasayukiTanaka0412.github.io"
+
+# ビルド設定
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 除外設定
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# コレクション設定（記事用）
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# デフォルト設定
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
