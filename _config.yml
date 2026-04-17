@@ -15,6 +15,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# ナビゲーション
+header_pages:
+  - tags.html
+
 # パーマリンク設定
 permalink: /:year/:month/:day/:title/
 

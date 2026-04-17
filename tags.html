@@ -1,0 +1,22 @@
+---
+layout: default
+title: タグ一覧
+permalink: /tags/
+---
+<div class="tags-page">
+  <h1 class="page-heading">タグ一覧</h1>
+
+  <ul class="tag-list">
+    {%- assign all_tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort -%}
+    {%- for tag in all_tags -%}
+      {%- assign tag_stripped = tag | strip -%}
+      {%- if tag_stripped != "" -%}
+      {%- assign tag_posts = site.posts | where_exp: "post", "post.tags contains tag_stripped" -%}
+      <li>
+        <a href="{{ site.baseurl }}/tags/{{ tag_stripped | slugify }}/" class="tag-badge tag-badge--large">{{ tag_stripped }}</a>
+        <span class="tag-count">{{ tag_posts.size }}件</span>
+      </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</div>
